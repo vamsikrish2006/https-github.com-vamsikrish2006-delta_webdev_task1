@@ -1,0 +1,175 @@
+body{
+    background-color: beige;
+    overflow: hidden;
+}
+#container{
+    border:0;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    position: absolute;
+    aspect-ratio: 1;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 0; 
+}
+.circle{
+    position: absolute;
+    height:5vh;
+    aspect-ratio: 1;
+    background-color: beige;
+    border-radius: 50%;
+    border:0.7vh solid black;
+    z-index:10;
+}
+.circle:hover{
+    background-color: rgb(247, 225, 196);
+}
+#box0{
+    margin:0;
+    padding:0;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:90vh;
+    aspect-ratio: 1;
+    background-color: beige;
+    clip-path: polygon(0 50%,50% -50%,100% 50%,50% 150%);
+}
+#box1{
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:70vh;
+    aspect-ratio: 1;
+    background-color: black;
+    clip-path: polygon(0 50%,50% -50%,100% 50%,50% 150%);
+}
+#box2{
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:68vh;
+    aspect-ratio: 1;
+    background-color: beige;
+    clip-path: polygon(0 50%,50% -50%,100% 50%,50% 150%);
+}
+#box3{
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:50vh;
+    aspect-ratio: 1;
+    background-color: black;
+    clip-path: polygon(0 50%,50% -50%,100% 50%,50% 150%);
+}
+#box4{
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:48vh;
+    aspect-ratio: 1;
+    background-color: beige;
+    clip-path: polygon(0 50%,50% -50%,100% 50%,50% 150%);
+}
+#box5{
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:30vh;
+    aspect-ratio: 1;
+    background-color: black;
+    clip-path: polygon(0 50%,50% -50%,100% 50%,50% 150%);
+}
+#box6{
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:28vh;
+    aspect-ratio: 1;
+    background-color: beige;
+    clip-path: polygon(0 50%,50% -50%,100% 50%,50% 150%);
+}
+h1{
+    font-size:5vh;
+}
+#score{
+    position: fixed;
+    top:0;
+    left:0;
+}
+#timers{
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#time{
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px; 
+    z-index: 1000;
+    background-color: beige; 
+}
+#movet{
+    width: 6vw;
+    margin-top: 0;
+}
+#bluet{
+    margin:0;
+    font-size: 5vh;
+}
+#redt{
+    margin: 0;
+    font-size: 5vh;
+}
+#turn{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    top:-3%;
+}
+#control{
+    position: absolute;
+    display:flex;
+    justify-content: center;
+    top:6%;
+}
+img{
+    height: 5vh;
+    aspect-ratio: 1;
+}
+button{
+    background-color: darkcyan;
+    font-style:oblique;
+    font-size: 1em;
+    width:15vh;
+    height:2em;
+    border:0.15em solid black;
+    border-radius: 0.3em;
+    margin:0.2em;
+    cursor: pointer;
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="circles.css">
+</head>
+<body>
+    <div id="container">
+        <div id="box0">
+        <div id="circle0" onclick="placementstage(movementstage,0)" class="circle"></div>
+        <div id="circle1" onclick="placementstage(movementstage,1)" class="circle"></div>
+        <div id="circle2" onclick="placementstage(movementstage,2)" class="circle"></div>
+        <div id="circle3" onclick="placementstage(movementstage,3)" class="circle"></div>
+        <div id="circle4" onclick="placementstage(movementstage,4)" class="circle"></div>
+        <div id="circle5" onclick="placementstage(movementstage,5)" class="circle"></div>
+        <div id="box1">
+        <div id="box2">
+        <div id="circle6" onclick="placementstage(movementstage,6)" class="circle"></div>
+        <div id="circle7" onclick="placementstage(movementstage,7)" class="circle"></div>
+        <div id="circle8" onclick="placementstage(movementstage,8)" class="circle"></div>
+        <div id="circle9" onclick="placementstage(movementstage,9)" class="circle"></div>
+        <div id="circle10" onclick="placementstage(movementstage,10)" class="circle"></div>
+        <div id="circle11" onclick="placementstage(movementstage,11)" class="circle"></div>
+        <div id="box3">
+        <div id="box4">
+        <div id="circle12" onclick="placementstage(movementstage,12)" class="circle"></div>
+        <div id="circle13" onclick="placementstage(movementstage,13)" class="circle"></div>
+        <div id="circle14" onclick="placementstage(movementstage,14)" class="circle"></div>
+        <div id="circle15" onclick="placementstage(movementstage,15)" class="circle"></div>
+        <div id="circle16" onclick="placementstage(movementstage,16)" class="circle"></div>
+        <div id="circle17" onclick="placementstage(movementstage,17)" class="circle"></div>
+        <div id="box5">
+        <div id="box6">
+        </div>
+        </div>  
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+<div id="score">
+    <h1 style="color:red; display:inline">Red: </h1>
+    <h1 style="color:red; display:inline" id="rscore">0</h1><br>
+    <h1 style="color:blue; display:inline;">Blue: </h1>
+    <h1 style="color:blue; display:inline; padding-right: 15px;"id="bscore">0</h1>
+</div>
+<div id="timers">
+    <div id="time">
+        <h1 style="color:blue;" id="bluet">2:00</h1>**
+        <h1 id="redt" style="color:red;">2:00</h1>
+    </div>
+    <h1 id="movet" style="color:black;">0:30</h1>
+</div>
+<div id="turn">
+    <h1 style="display:inline;">Turn: </h1>
+    <h1 id="player" style="display:inline;">Red</h1>
+</div>
+<div id="control">
+    <button><img src="C:\Users\neera\OneDrive\Documents\html\html\delta\icons8-pause-30.png" onclick="pause()" alt="pause"></button> 
+    <button><img src="C:\Users\neera\OneDrive\Documents\html\html\delta\icons8-reset-24.png" onclick="resume()" alt="resume"></button>
+    <button><img src="C:\Users\neera\OneDrive\Documents\html\html\delta\icons8-start-30.png" onclick="reset()" alt="reset"></button>
+</div>
+</div>
+<script src="time.js"></script>
+<script src="index.js"></script>
+<script src="responsive.js"></script>
+<script src="lines.js"></script>
+</body>
+</html>
