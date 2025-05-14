@@ -18,7 +18,7 @@ function toggle(){
             btimer = setInterval(bclock,1000);
         }
         finish();
-    }
+        }
     if (turn === "blue"){
         clearInterval(btimer);
         btimer = null;
@@ -26,8 +26,8 @@ function toggle(){
             rtimer = setInterval(rclock,1000);
         }
         finish();   
-    }
-}
+       }
+       }
 function mclock(){
     let mins = Math.floor(mtime/60);
     let secs = mtime % 60;
@@ -43,9 +43,9 @@ function mclock(){
         else if(turn==="blue"){
             window.alert("You took too long for a move.Red wins!!");
         }
-    }
+        }
     mtime-=1;
-}
+        }
 
 function rclock(){
     console.log("rclock tick");
@@ -66,9 +66,9 @@ function rclock(){
         else{
             window.alert("Draw");
         }
-    }
+        }
     rtime-=1;
-}
+        }
 
 function bclock(){
     console.log("bclock tick");
@@ -89,9 +89,9 @@ function bclock(){
         else{
             window.alert("Draw");
         }
-    }
+        }
     btime-=1;
-}
+        }
 
 
 function pause(){
@@ -107,8 +107,8 @@ function pause(){
         btimer = null;
     }
     paused = true;
-}
-}
+    }
+    }
 function resume(){
     if (paused){
     mtimer = setInterval(mclock,1000);
@@ -117,16 +117,16 @@ function resume(){
         if (btimer === null){
             btimer = setInterval(bclock,1000);
         }
-    }
+        }
     if (turn === "red"){
         if (rtimer===null){
             rtimer = setInterval(rclock,1000);
         }
-    }
+        }
     paused = false;
-}
-}
+        }
+        }
 
 function reset(){
     location.reload();
-}
+        }
